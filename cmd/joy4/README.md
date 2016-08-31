@@ -53,7 +53,7 @@ joy4 -rtmpcheckparams
 
 Get stream info
 
-```json
+```
 GET /stat/streams
 {
   "1": {
@@ -83,7 +83,7 @@ GET /stat/stream/1
 
 Get channel info
 
-```json
+```
 GET /stat/channels
 {
   "channel-1": {
@@ -102,7 +102,7 @@ GET /stat/channel/1
 
 Create channel
 
-```json
+```
 POST /channel/create
 {
   "id":"channel-1",
@@ -117,7 +117,7 @@ POST /channel/create
 
 Set Channel Publisher
 
-```json
+```
 POST /channel/setPublisher
 {
   "id":"channel-1",
@@ -130,7 +130,7 @@ POST /channel/setPublisher
 
 Add Channel Subscriber
 
-```json
+```
 POST /channel/addSubscriber
 {
   "id":"channel-1",
@@ -144,7 +144,7 @@ POST /channel/addSubscriber
 
 Close Stream
 
-```json
+```
 POST /stream/close 
 {
   "id":"1",
@@ -156,7 +156,7 @@ POST /stream/close
 
 Close Channel
 
-```json
+```
 POST /channel/close
 {
   "id":"channel-1",
@@ -168,7 +168,7 @@ POST /channel/close
 
 New stream
 
-```json
+```
 POST /stream/new
 {
   "id":"1", // optional
@@ -180,7 +180,7 @@ POST /stream/new
 
 Accept/Reject stream when stream in `checkingParams` state
 
-```json
+```
 POST /stream/{accept,reject}
 {
   "id":"1",
@@ -192,7 +192,7 @@ POST /stream/{accept,reject}
 
 Change stream id
 
-```json
+```
 POST /stream/changeid
 {
   "id":"1",
@@ -207,7 +207,7 @@ POST /stream/changeid
 
 Stream check params event
 
-```json
+```
 POST /event/streamCheckParams
 {
   "id":"1",
@@ -224,7 +224,7 @@ POST /event/streamCheckParams
 
 Stream connected event
 
-```json
+```
 POST /event/streamConnected
 {
   "id":"xxoo",
@@ -235,7 +235,7 @@ POST /event/streamConnected
 
 Stream Close event
 
-```json
+```
 POST /event/streamClose
 {
   "id":"1",
@@ -244,7 +244,7 @@ POST /event/streamClose
 
 Channel Close event
 
-```json
+```
 POST /event/channelClose
 {
   "id":"channel-1",
